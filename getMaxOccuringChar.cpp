@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
-char getMaxOccuringChar(string s){
+char getMaxOccuringChar(string s) // function to get the max character occuring
+{
 		int arra[26];
 		int c=-1,i=0,k=0;
 		for(i=0;i<26;i++){
@@ -19,10 +20,11 @@ char getMaxOccuringChar(string s){
 int main(){
 	int T;
 	cin>>T;
-	while(T--){
+	while(T--) //starting loop execution
+	{
 		string s;
 		cin>>s;
-		cout<<getMaxOccuringChar(s)<<endl;
+		cout<<getMaxOccuringChar(s)<<endl;// passed the character to the function
 		}
 	return 0;
 	}	
